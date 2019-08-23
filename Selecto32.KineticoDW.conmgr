@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Selecto32.KineticoDW"
+  DTS:DTSID="{33584468-EA88-498B-B9C4-9AD581480D2F}"
+  DTS:CreationName="ODBC">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=KineticoDW;Dsn=Selecto32;">
+      <DTS:Password
+        DTS:Name="pwd"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVCtN/2c0iUaAf2tNF3Cx9QAAAAACAAAAAAADZgAAwAAAABAAAABz6EuyvoC80BaBoOa/361kAAAAAASAAACgAAAAEAAAAFPcsjCH/dIsWAKR3ZuP6h14AAAAIS5/SdcfIJkC2gRYkq/KPjKQO4NQVI1ut8hXm2Hpe1mTciz6Ad2PAiyUDBGwuTCttPtpmA5lgXWArqroEdzizXzSwH1/rVkRgc2jvPIa+NnjASHIgRB1qkmf9V3Dt8qPCM+bhtcJqAcPdP8R8PlAXo9cuylmf3baFAAAAMSGY+mcG2aCb73TEWNoBOP9UcEt</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
