@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SageDataExtraction</Name>
-    <LastWriteTime>2019-08-25T15:42:07.6927469Z</LastWriteTime>
+    <LastWriteTime>2019-08-25T18:13:02.6868331Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>ItemData.dtsx</Name>
-      <LastWriteTime>2019-08-25T14:30:13.7027502Z</LastWriteTime>
+      <LastWriteTime>2019-08-25T16:51:58.732753Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -18,7 +18,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>UserData.dtsx</Name>
-      <LastWriteTime>2019-08-25T15:47:26.2449889Z</LastWriteTime>
+      <LastWriteTime>2019-08-25T19:27:14.6637827Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CustomerData.dtsx</Name>
+      <LastWriteTime>2019-08-25T18:31:11.5701889Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

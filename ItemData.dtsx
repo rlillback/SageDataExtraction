@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ItemData"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{7DE728BC-54F4-474A-A04B-B2CAA15BF1A9}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{BB5342CD-A018-4C1B-8163-7AB69D94B668}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2493,6 +2493,7 @@
                   description="ODBC Source"
                   name="ODBC Source"
                   usesDispositions="true"
+                  validateExternalMetadata="False"
                   version="7">
                   <properties>
                     <property
@@ -15563,7 +15564,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="truncate Item Aliases"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15579,7 +15580,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="truncate item alternates"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15595,7 +15596,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="truncate item vendor"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15611,7 +15612,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="truncate ods_CI_ExtendedDescription"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15627,7 +15628,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="truncate ods_CI_Item"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18851,7 +18852,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="truc cart size"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18867,7 +18868,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="trunc cart tech"
-          DTS:ThreadHint="6">
+          DTS:ThreadHint="7">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18883,7 +18884,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="trunc cat"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="8">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18899,7 +18900,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="trunc head"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18915,7 +18916,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="trunc series"
-          DTS:ThreadHint="7">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18931,7 +18932,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="trunc stage"
-          DTS:ThreadHint="8">
+          DTS:ThreadHint="6">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18947,7 +18948,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="truncate brand"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -19068,26 +19069,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9.83333333333331,39.6666666666667"
+              EndConnector="-9.83333333333331,39.666666666667"
               Start="0,0"
-              End="-9.83333333333331,32.1666666666667">
+              End="-9.83333333333331,32.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.8333333333334" />
+                    End="0,15.8333333333335" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.8333333333334"
-                    Point2="0,19.8333333333334"
-                    Point3="-4,19.8333333333334" />
+                    Point1="0,15.8333333333335"
+                    Point2="0,19.8333333333335"
+                    Point3="-4,19.8333333333335" />
                   <mssgle:LineSegment
-                    End="-5.83333333333331,19.8333333333334" />
+                    End="-5.83333333333331,19.8333333333335" />
                   <mssgle:CubicBezierSegment
-                    Point1="-5.83333333333331,19.8333333333334"
-                    Point2="-9.83333333333331,19.8333333333334"
-                    Point3="-9.83333333333331,23.8333333333334" />
+                    Point1="-5.83333333333331,19.8333333333335"
+                    Point2="-9.83333333333331,19.8333333333335"
+                    Point3="-9.83333333333331,23.8333333333335" />
                   <mssgle:LineSegment
-                    End="-9.83333333333331,32.1666666666667" />
+                    End="-9.83333333333331,32.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19121,8 +19122,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="536,177"
-          Size="536,220"
+          PanelSize="536,212"
+          Size="536,255"
           Id="Package\BOM Files"
           TopLeft="507.25,396.5" />
         <NodeLayout
@@ -19307,6 +19308,22 @@
           Id="Package\User Defined Tables\get cart tech"
           TopLeft="303,97.7272727272727" />
         <NodeLayout
+          Size="112,42"
+          Id="Package\User Defined Tables\get cat"
+          TopLeft="583,96" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\User Defined Tables\get head"
+          TopLeft="452,100" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\User Defined Tables\get series"
+          TopLeft="832,94" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\User Defined Tables\get stage"
+          TopLeft="704,96" />
+        <NodeLayout
           Size="141,42"
           Id="Package\User Defined Tables\truc cart size"
           TopLeft="167,26" />
@@ -19314,6 +19331,22 @@
           Size="148,42"
           Id="Package\User Defined Tables\trunc cart tech"
           TopLeft="315.727272727273,25.0000000000001" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\User Defined Tables\trunc cat"
+          TopLeft="600,25" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\User Defined Tables\trunc head"
+          TopLeft="465,27" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\User Defined Tables\trunc series"
+          TopLeft="860,29" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\User Defined Tables\trunc stage"
+          TopLeft="725,27" />
         <NodeLayout
           Size="150,42"
           Id="Package\User Defined Tables\truncate brand"
@@ -19408,14 +19441,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="131,42"
-          Id="Package\User Defined Tables\trunc head"
-          TopLeft="465,27" />
-        <NodeLayout
-          Size="122,42"
-          Id="Package\User Defined Tables\get head"
-          TopLeft="452,100" />
         <EdgeLayout
           Id="Package\User Defined Tables.PrecedenceConstraints[Constraint 3]"
           TopLeft="530.5,69">
@@ -19450,14 +19475,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\User Defined Tables\trunc cat"
-          TopLeft="600,25" />
-        <NodeLayout
-          Size="112,42"
-          Id="Package\User Defined Tables\get cat"
-          TopLeft="583,96" />
         <EdgeLayout
           Id="Package\User Defined Tables.PrecedenceConstraints[Constraint 4]"
           TopLeft="660.5,67">
@@ -19492,14 +19509,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="133,42"
-          Id="Package\User Defined Tables\trunc stage"
-          TopLeft="725,27" />
-        <NodeLayout
-          Size="124,42"
-          Id="Package\User Defined Tables\get stage"
-          TopLeft="704,96" />
         <EdgeLayout
           Id="Package\User Defined Tables.PrecedenceConstraints[Constraint 5]"
           TopLeft="791.5,69">
@@ -19534,14 +19543,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="136,42"
-          Id="Package\User Defined Tables\trunc series"
-          TopLeft="860,29" />
-        <NodeLayout
-          Size="127,42"
-          Id="Package\User Defined Tables\get series"
-          TopLeft="832,94" />
         <EdgeLayout
           Id="Package\User Defined Tables.PrecedenceConstraints[Constraint 6]"
           TopLeft="928,71">
@@ -19660,51 +19661,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="149,42"
-          Id="Package\BOM Files\get BOM Detail\ODBC Source"
-          TopLeft="692,58" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\BOM Files\get BOM Detail\Data Conversion"
-          TopLeft="715,162" />
-        <EdgeLayout
-          Id="Package\BOM Files\get BOM Detail.Paths[ODBC Source Output]"
-          TopLeft="766.5,100">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="29,62"
-              Start="0,0"
-              End="29,54.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27"
-                    Point2="0,31"
-                    Point3="4,31" />
-                  <mssgle:LineSegment
-                    End="25,31" />
-                  <mssgle:CubicBezierSegment
-                    Point1="25,31"
-                    Point2="29,31"
-                    Point3="29,35" />
-                  <mssgle:LineSegment
-                    End="29,54.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="177,42"
+          Id="Package\BOM Files\get BOM Detail\OLE DB Destination"
+          TopLeft="764,374" />
         <NodeLayout
           Size="158,42"
           Id="Package\BOM Files\get BOM Detail\Derived Column"
           TopLeft="736,262" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\BOM Files\get BOM Detail\Data Conversion"
+          TopLeft="715,162" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\BOM Files\get BOM Detail\ODBC Source"
+          TopLeft="692,58" />
         <EdgeLayout
           Id="Package\BOM Files\get BOM Detail.Paths[Data Conversion Output]"
           TopLeft="795.5,204">
@@ -19739,10 +19710,40 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\BOM Files\get BOM Detail\OLE DB Destination"
-          TopLeft="764,374" />
+        <EdgeLayout
+          Id="Package\BOM Files\get BOM Detail.Paths[ODBC Source Output]"
+          TopLeft="766.5,100">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29,62"
+              Start="0,0"
+              End="29,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="4,31" />
+                  <mssgle:LineSegment
+                    End="25,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25,31"
+                    Point2="29,31"
+                    Point3="29,35" />
+                  <mssgle:LineSegment
+                    End="29,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\BOM Files\get BOM Detail.Paths[Derived Column Output]"
           TopLeft="815,304">
@@ -19812,13 +19813,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="149,42"
-          Id="Package\BOM Files\get BOM Header\ODBC Source"
-          TopLeft="657,87" />
+          Size="158,42"
+          Id="Package\BOM Files\get BOM Header\Derived Column"
+          TopLeft="702,288" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\BOM Files\get BOM Header\OLE DB Destination"
+          TopLeft="696,393" />
         <NodeLayout
           Size="161,42"
           Id="Package\BOM Files\get BOM Header\Data Conversion"
           TopLeft="680,200" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\BOM Files\get BOM Header\ODBC Source"
+          TopLeft="657,87" />
         <EdgeLayout
           Id="Package\BOM Files\get BOM Header.Paths[ODBC Source Output]"
           TopLeft="731.5,129">
@@ -19853,14 +19862,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\BOM Files\get BOM Header\OLE DB Destination"
-          TopLeft="696,393" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\BOM Files\get BOM Header\Derived Column"
-          TopLeft="702,288" />
+        <EdgeLayout
+          Id="Package\BOM Files\get BOM Header.Paths[Derived Column Output]"
+          TopLeft="782.75,330">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\BOM Files\get BOM Header.Paths[Data Conversion Output]"
           TopLeft="760.5,242">
@@ -19887,28 +19910,6 @@
                     Point3="20.5,27" />
                   <mssgle:LineSegment
                     End="20.5,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\BOM Files\get BOM Header.Paths[Derived Column Output]"
-          TopLeft="782.75,330">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63"
-              Start="0,0"
-              End="0,55.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19960,6 +19961,10 @@
           Id="Package\Item Data Files\get alternate items\ODBC Source"
           TopLeft="654,70" />
         <NodeLayout
+          Size="158,42"
+          Id="Package\Item Data Files\get alternate items\Derived Column"
+          TopLeft="706,303" />
+        <NodeLayout
           Size="161,42"
           Id="Package\Item Data Files\get alternate items\Data Conversion"
           TopLeft="670,197" />
@@ -19997,10 +20002,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Item Data Files\get alternate items\Derived Column"
-          TopLeft="706,303" />
         <EdgeLayout
           Id="Package\Item Data Files\get alternate items.Paths[Derived Column Output]"
           TopLeft="788.75,345">
@@ -20092,47 +20093,51 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="159,42"
-          Id="Package\Item Data Files\get CI_Item\Load SQL Table"
-          TopLeft="389,463" />
-        <NodeLayout
           Size="169,42"
           Id="Package\Item Data Files\get CI_Item\Strip Original Data"
           TopLeft="375,362" />
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Item Data Files\get CI_Item\Load CI_Item"
+          TopLeft="386,174" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Item Data Files\get CI_Item\Load SQL Table"
+          TopLeft="389,463" />
         <NodeLayout
           Size="155,42"
           Id="Package\Item Data Files\get CI_Item\Convert to SQL"
           TopLeft="393,274" />
         <NodeLayout
-          Size="145,42"
-          Id="Package\Item Data Files\get CI_Item\Load CI_Item"
-          TopLeft="386,174" />
+          Size="158,42"
+          Id="Package\Item Data Files\get CI_Item\Derived Column"
+          TopLeft="672,419" />
         <EdgeLayout
-          Id="Package\Item Data Files\get CI_Item.Paths[ODBC Source Output]"
-          TopLeft="458.5,216">
+          Id="Package\Item Data Files\get CI_Item.Paths[Derived Column Output]"
+          TopLeft="672,445.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12,58"
+              EndConnector="-124,38.3333333333333"
               Start="0,0"
-              End="12,50.5">
+              End="-116.5,38.3333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25" />
+                    End="-48.3302752293578,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25"
-                    Point2="0,29"
-                    Point3="4,29" />
+                    Point1="-48.3302752293578,0"
+                    Point2="-52.3302752293578,0"
+                    Point3="-52.3302752293578,4" />
                   <mssgle:LineSegment
-                    End="8,29" />
+                    End="-52.3302752293578,34.3333333333333" />
                   <mssgle:CubicBezierSegment
-                    Point1="8,29"
-                    Point2="12,29"
-                    Point3="12,33" />
+                    Point1="-52.3302752293578,34.3333333333333"
+                    Point2="-52.3302752293578,38.3333333333333"
+                    Point3="-56.3302752293578,38.3333333333333" />
                   <mssgle:LineSegment
-                    End="12,50.5" />
+                    End="-116.5,38.3333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20175,10 +20180,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Item Data Files\get CI_Item\Derived Column"
-          TopLeft="672,419" />
         <EdgeLayout
           Id="Package\Item Data Files\get CI_Item.Paths[Union All Output 1]"
           TopLeft="544,383">
@@ -20214,31 +20215,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Item Data Files\get CI_Item.Paths[Derived Column Output]"
-          TopLeft="672,445.666666666667">
+          Id="Package\Item Data Files\get CI_Item.Paths[ODBC Source Output]"
+          TopLeft="458.5,216">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-124,38.3333333333333"
+              EndConnector="12,58"
               Start="0,0"
-              End="-116.5,38.3333333333333">
+              End="12,50.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-48.3302752293578,0" />
+                    End="0,25" />
                   <mssgle:CubicBezierSegment
-                    Point1="-48.3302752293578,0"
-                    Point2="-52.3302752293578,0"
-                    Point3="-52.3302752293578,4" />
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="4,29" />
                   <mssgle:LineSegment
-                    End="-52.3302752293578,34.3333333333333" />
+                    End="8,29" />
                   <mssgle:CubicBezierSegment
-                    Point1="-52.3302752293578,34.3333333333333"
-                    Point2="-52.3302752293578,38.3333333333333"
-                    Point3="-56.3302752293578,38.3333333333333" />
+                    Point1="8,29"
+                    Point2="12,29"
+                    Point3="12,33" />
                   <mssgle:LineSegment
-                    End="-116.5,38.3333333333333" />
+                    End="12,50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20290,13 +20291,17 @@
           Id="Package\Item Data Files\get Extended Description\get Sage"
           TopLeft="580,106" />
         <NodeLayout
+          Size="177,42"
+          Id="Package\Item Data Files\get Extended Description\OLE DB Destination"
+          TopLeft="692,452" />
+        <NodeLayout
           Size="161,42"
           Id="Package\Item Data Files\get Extended Description\Data Conversion"
           TopLeft="668,288" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\Item Data Files\get Extended Description\OLE DB Destination"
-          TopLeft="692,452" />
+          Size="158,42"
+          Id="Package\Item Data Files\get Extended Description\Derived Column"
+          TopLeft="675,351" />
         <EdgeLayout
           Id="Package\Item Data Files\get Extended Description.Paths[ODBC Source Output]"
           TopLeft="641.5,148">
@@ -20323,6 +20328,40 @@
                     Point3="93,32" />
                   <mssgle:LineSegment
                     End="93,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Item Data Files\get Extended Description.Paths[Derived Column Output1]"
+          TopLeft="754,393">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="26.5,59"
+              Start="0,0"
+              End="26.5,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.5"
+                    Point2="0,29.5"
+                    Point3="4,29.5" />
+                  <mssgle:LineSegment
+                    End="22.5,29.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,29.5"
+                    Point2="26.5,29.5"
+                    Point3="26.5,33.5" />
+                  <mssgle:LineSegment
+                    End="26.5,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20365,10 +20404,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Item Data Files\get Extended Description\Derived Column"
-          TopLeft="675,351" />
         <EdgeLayout
           Id="Package\Item Data Files\get Extended Description.Paths[Data Conversion Output]"
           TopLeft="668,309">
@@ -20395,40 +20430,6 @@
                     Point3="-18.5,63" />
                   <mssgle:LineSegment
                     End="-0.5,63" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Item Data Files\get Extended Description.Paths[Derived Column Output1]"
-          TopLeft="754,393">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="26.5,59"
-              Start="0,0"
-              End="26.5,51.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.5"
-                    Point2="0,29.5"
-                    Point3="4,29.5" />
-                  <mssgle:LineSegment
-                    End="22.5,29.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.5,29.5"
-                    Point2="26.5,29.5"
-                    Point3="26.5,33.5" />
-                  <mssgle:LineSegment
-                    End="26.5,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20476,13 +20477,17 @@
           Id="Package\Item Data Files\get Item Aliases\OLE DB Destination"
           TopLeft="750,386" />
         <NodeLayout
+          Size="149,42"
+          Id="Package\Item Data Files\get Item Aliases\ODBC Source"
+          TopLeft="715,90" />
+        <NodeLayout
           Size="161,42"
           Id="Package\Item Data Files\get Item Aliases\Data Conversion"
           TopLeft="732,200" />
         <NodeLayout
-          Size="149,42"
-          Id="Package\Item Data Files\get Item Aliases\ODBC Source"
-          TopLeft="715,90" />
+          Size="158,42"
+          Id="Package\Item Data Files\get Item Aliases\Derived Column"
+          TopLeft="764,282" />
         <EdgeLayout
           Id="Package\Item Data Files\get Item Aliases.Paths[ODBC Source Output]"
           TopLeft="789.5,132">
@@ -20517,10 +20522,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Item Data Files\get Item Aliases\Derived Column"
-          TopLeft="764,282" />
+        <EdgeLayout
+          Id="Package\Item Data Files\get Item Aliases.Paths[Derived Column Output]"
+          TopLeft="840.75,324">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62"
+              Start="0,0"
+              End="0,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Item Data Files\get Item Aliases.Paths[Data Conversion Output]"
           TopLeft="812.5,242">
@@ -20547,28 +20570,6 @@
                     Point3="30.5,24" />
                   <mssgle:LineSegment
                     End="30.5,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Item Data Files\get Item Aliases.Paths[Derived Column Output]"
-          TopLeft="840.75,324">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,62"
-              Start="0,0"
-              End="0,54.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20623,6 +20624,10 @@
           Size="149,42"
           Id="Package\Item Data Files\get item vendor\ODBC Source"
           TopLeft="649,64" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Item Data Files\get item vendor\Derived Column"
+          TopLeft="693,283" />
         <EdgeLayout
           Id="Package\Item Data Files\get item vendor.Paths[ODBC Source Output]"
           TopLeft="723.5,106">
@@ -20657,44 +20662,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Item Data Files\get item vendor\Derived Column"
-          TopLeft="693,283" />
-        <EdgeLayout
-          Id="Package\Item Data Files\get item vendor.Paths[Data Conversion Output]"
-          TopLeft="742.5,223">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="29.5,60"
-              Start="0,0"
-              End="29.5,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="4,30" />
-                  <mssgle:LineSegment
-                    End="25.5,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="25.5,30"
-                    Point2="29.5,30"
-                    Point3="29.5,34" />
-                  <mssgle:LineSegment
-                    End="29.5,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Item Data Files\get item vendor.Paths[Derived Column Output]"
           TopLeft="772,325">
@@ -20721,6 +20688,40 @@
                     Point3="-11.5,22" />
                   <mssgle:LineSegment
                     End="-11.5,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Item Data Files\get item vendor.Paths[Data Conversion Output]"
+          TopLeft="742.5,223">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.5,60"
+              Start="0,0"
+              End="29.5,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="25.5,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.5,30"
+                    Point2="29.5,30"
+                    Point3="29.5,34" />
+                  <mssgle:LineSegment
+                    End="29.5,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21215,158 +21216,6 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\User Defined Tables\get head">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="149,42"
-          Id="Package\User Defined Tables\get head\ODBC Source"
-          TopLeft="487,45" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\User Defined Tables\get head\Data Conversion"
-          TopLeft="502,156" />
-        <EdgeLayout
-          Id="Package\User Defined Tables\get head.Paths[ODBC Source Output]"
-          TopLeft="561.5,87">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="21,69"
-              Start="0,0"
-              End="21,61.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.5"
-                    Point2="0,34.5"
-                    Point3="4,34.5" />
-                  <mssgle:LineSegment
-                    End="17,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17,34.5"
-                    Point2="21,34.5"
-                    Point3="21,38.5" />
-                  <mssgle:LineSegment
-                    End="21,61.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\User Defined Tables\get head\Derived Column"
-          TopLeft="522,273" />
-        <EdgeLayout
-          Id="Package\User Defined Tables\get head.Paths[Data Conversion Output]"
-          TopLeft="582.5,198">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="18.5,75"
-              Start="0,0"
-              End="18.5,67.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.5"
-                    Point2="0,37.5"
-                    Point3="4,37.5" />
-                  <mssgle:LineSegment
-                    End="14.5,37.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.5,37.5"
-                    Point2="18.5,37.5"
-                    Point3="18.5,41.5" />
-                  <mssgle:LineSegment
-                    End="18.5,67.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\User Defined Tables\get head\OLE DB Destination"
-          TopLeft="550,389" />
-        <EdgeLayout
-          Id="Package\User Defined Tables\get head.Paths[Derived Column Output]"
-          TopLeft="601,315">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="37.5,74"
-              Start="0,0"
-              End="37.5,66.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33"
-                    Point2="0,37"
-                    Point3="4,37" />
-                  <mssgle:LineSegment
-                    End="33.5,37" />
-                  <mssgle:CubicBezierSegment
-                    Point1="33.5,37"
-                    Point2="37.5,37"
-                    Point3="37.5,41" />
-                  <mssgle:LineSegment
-                    End="37.5,66.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\User Defined Tables\get head\ODBC Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\User Defined Tables\get head\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\User Defined Tables\get cat">
     <LayoutInfo>
       <GraphLayout
@@ -21493,19 +21342,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\User Defined Tables\get cat\ODBC Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\User Defined Tables\get cat\OLE DB Destination">
     <Properties>
       <Property>
@@ -21518,45 +21354,58 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\User Defined Tables\get cat\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\User Defined Tables\get stage">
+    design-time-name="Package\User Defined Tables\get head">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149,42"
-          Id="Package\User Defined Tables\get stage\ODBC Source"
-          TopLeft="586,36" />
+          Id="Package\User Defined Tables\get head\ODBC Source"
+          TopLeft="487,45" />
         <NodeLayout
           Size="161,42"
-          Id="Package\User Defined Tables\get stage\Data Conversion"
-          TopLeft="606,131" />
+          Id="Package\User Defined Tables\get head\Data Conversion"
+          TopLeft="502,156" />
         <EdgeLayout
-          Id="Package\User Defined Tables\get stage.Paths[ODBC Source Output]"
-          TopLeft="660.5,78">
+          Id="Package\User Defined Tables\get head.Paths[ODBC Source Output]"
+          TopLeft="561.5,87">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="26,53"
+              EndConnector="21,69"
               Start="0,0"
-              End="26,45.5">
+              End="21,61.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.5" />
+                    End="0,30.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.5"
-                    Point2="0,26.5"
-                    Point3="4,26.5" />
+                    Point1="0,30.5"
+                    Point2="0,34.5"
+                    Point3="4,34.5" />
                   <mssgle:LineSegment
-                    End="22,26.5" />
+                    End="17,34.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="22,26.5"
-                    Point2="26,26.5"
-                    Point3="26,30.5" />
+                    Point1="17,34.5"
+                    Point2="21,34.5"
+                    Point3="21,38.5" />
                   <mssgle:LineSegment
-                    End="26,45.5" />
+                    End="21,61.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21567,34 +21416,34 @@
         </EdgeLayout>
         <NodeLayout
           Size="158,42"
-          Id="Package\User Defined Tables\get stage\Derived Column"
-          TopLeft="616,221" />
+          Id="Package\User Defined Tables\get head\Derived Column"
+          TopLeft="522,273" />
         <EdgeLayout
-          Id="Package\User Defined Tables\get stage.Paths[Data Conversion Output]"
-          TopLeft="686.5,173">
+          Id="Package\User Defined Tables\get head.Paths[Data Conversion Output]"
+          TopLeft="582.5,198">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8.5,48"
+              EndConnector="18.5,75"
               Start="0,0"
-              End="8.5,40.5">
+              End="18.5,67.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20" />
+                    End="0,33.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20"
-                    Point2="0,24"
-                    Point3="4,24" />
+                    Point1="0,33.5"
+                    Point2="0,37.5"
+                    Point3="4,37.5" />
                   <mssgle:LineSegment
-                    End="4.5,24" />
+                    End="14.5,37.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="4.5,24"
-                    Point2="8.5,24"
-                    Point3="8.5,28" />
+                    Point1="14.5,37.5"
+                    Point2="18.5,37.5"
+                    Point3="18.5,41.5" />
                   <mssgle:LineSegment
-                    End="8.5,40.5" />
+                    End="18.5,67.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21605,34 +21454,34 @@
         </EdgeLayout>
         <NodeLayout
           Size="177,42"
-          Id="Package\User Defined Tables\get stage\OLE DB Destination"
-          TopLeft="622,310" />
+          Id="Package\User Defined Tables\get head\OLE DB Destination"
+          TopLeft="550,389" />
         <EdgeLayout
-          Id="Package\User Defined Tables\get stage.Paths[Derived Column Output]"
-          TopLeft="695,263">
+          Id="Package\User Defined Tables\get head.Paths[Derived Column Output]"
+          TopLeft="601,315">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="15.5,47"
+              EndConnector="37.5,74"
               Start="0,0"
-              End="15.5,39.5">
+              End="37.5,66.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5" />
+                    End="0,33" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.5"
-                    Point2="0,23.5"
-                    Point3="4,23.5" />
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="4,37" />
                   <mssgle:LineSegment
-                    End="11.5,23.5" />
+                    End="33.5,37" />
                   <mssgle:CubicBezierSegment
-                    Point1="11.5,23.5"
-                    Point2="15.5,23.5"
-                    Point3="15.5,27.5" />
+                    Point1="33.5,37"
+                    Point2="37.5,37"
+                    Point3="37.5,41" />
                   <mssgle:LineSegment
-                    End="15.5,39.5" />
+                    End="37.5,66.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21645,7 +21494,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\User Defined Tables\get stage\ODBC Source">
+    design-time-name="Package\User Defined Tables\get head\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -21658,7 +21507,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\User Defined Tables\get stage\OLE DB Destination">
+    design-time-name="Package\User Defined Tables\get head\ODBC Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -21797,7 +21646,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\User Defined Tables\get series\ODBC Source">
+    design-time-name="Package\User Defined Tables\get series\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -21810,7 +21659,159 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\User Defined Tables\get series\OLE DB Destination">
+    design-time-name="Package\User Defined Tables\get series\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\User Defined Tables\get stage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149,42"
+          Id="Package\User Defined Tables\get stage\ODBC Source"
+          TopLeft="586,36" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\User Defined Tables\get stage\Data Conversion"
+          TopLeft="606,131" />
+        <EdgeLayout
+          Id="Package\User Defined Tables\get stage.Paths[ODBC Source Output]"
+          TopLeft="660.5,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="26,53"
+              Start="0,0"
+              End="26,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5"
+                    Point2="0,26.5"
+                    Point3="4,26.5" />
+                  <mssgle:LineSegment
+                    End="22,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22,26.5"
+                    Point2="26,26.5"
+                    Point3="26,30.5" />
+                  <mssgle:LineSegment
+                    End="26,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158,42"
+          Id="Package\User Defined Tables\get stage\Derived Column"
+          TopLeft="616,221" />
+        <EdgeLayout
+          Id="Package\User Defined Tables\get stage.Paths[Data Conversion Output]"
+          TopLeft="686.5,173">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,48"
+              Start="0,0"
+              End="8.5,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="4,24" />
+                  <mssgle:LineSegment
+                    End="4.5,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,24"
+                    Point2="8.5,24"
+                    Point3="8.5,28" />
+                  <mssgle:LineSegment
+                    End="8.5,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\User Defined Tables\get stage\OLE DB Destination"
+          TopLeft="622,310" />
+        <EdgeLayout
+          Id="Package\User Defined Tables\get stage.Paths[Derived Column Output]"
+          TopLeft="695,263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.5,47"
+              Start="0,0"
+              End="15.5,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="4,23.5" />
+                  <mssgle:LineSegment
+                    End="11.5,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.5,23.5"
+                    Point2="15.5,23.5"
+                    Point3="15.5,27.5" />
+                  <mssgle:LineSegment
+                    End="15.5,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\User Defined Tables\get stage\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\User Defined Tables\get stage\ODBC Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
