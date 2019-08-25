@@ -11,12 +11,1189 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{4428FD95-4441-440B-8079-0CB1B91297AD}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{27907B17-C04D-4107-9BBD-0DD13DDBF74F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\get AP_Terms"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{18989EFF-443A-4E63-89CA-E7299E572332}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="get AP_Terms"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\get AP_Terms\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[TermsCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="TermsCode"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[TermsCode]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[TermsCodeDesc]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="TermsCodeDesc"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[TermsCodeDesc]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[DaysBeforeDue]"
+                      cachedDataType="numeric"
+                      cachedName="DaysBeforeDue"
+                      cachedPrecision="3"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DaysBeforeDue]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[DueDateADayOfTheMonth]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="DueDateADayOfTheMonth"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DueDateADayOfTheMonth]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[MinimumDaysAllowedInv]"
+                      cachedDataType="numeric"
+                      cachedName="MinimumDaysAllowedInv"
+                      cachedPrecision="3"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[MinimumDaysAllowedInv]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[DaysDiscountAllowed]"
+                      cachedDataType="numeric"
+                      cachedName="DaysDiscountAllowed"
+                      cachedPrecision="3"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DaysDiscountAllowed]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[DiscountDateADayOfTheMo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="DiscountDateADayOfTheMo"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DiscountDateADayOfTheMo]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[MinimumDaysAllowedDisc]"
+                      cachedDataType="numeric"
+                      cachedName="MinimumDaysAllowedDisc"
+                      cachedPrecision="3"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[MinimumDaysAllowedDisc]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input].Columns[DiscountRate]"
+                      cachedDataType="numeric"
+                      cachedName="DiscountRate"
+                      cachedPrecision="8"
+                      cachedScale="3"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DiscountRate]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TermsCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="2"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TermsCode]"
+                      name="Copy of TermsCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[TermsCode]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TermsCodeDesc]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="30"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TermsCodeDesc]"
+                      name="Copy of TermsCodeDesc"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[TermsCodeDesc]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DaysBeforeDue]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DaysBeforeDue]"
+                      name="Copy of DaysBeforeDue"
+                      precision="3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DaysBeforeDue]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DueDateADayOfTheMonth]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DueDateADayOfTheMonth]"
+                      name="Copy of DueDateADayOfTheMonth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DueDateADayOfTheMonth]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MinimumDaysAllowedInv]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MinimumDaysAllowedInv]"
+                      name="Copy of MinimumDaysAllowedInv"
+                      precision="3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[MinimumDaysAllowedInv]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DaysDiscountAllowed]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DaysDiscountAllowed]"
+                      name="Copy of DaysDiscountAllowed"
+                      precision="3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DaysDiscountAllowed]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DiscountDateADayOfTheMo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DiscountDateADayOfTheMo]"
+                      name="Copy of DiscountDateADayOfTheMo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DiscountDateADayOfTheMo]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MinimumDaysAllowedDisc]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MinimumDaysAllowedDisc]"
+                      name="Copy of MinimumDaysAllowedDisc"
+                      precision="3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[MinimumDaysAllowedDisc]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DiscountRate]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DiscountRate]"
+                      name="Copy of DiscountRate"
+                      precision="8"
+                      scale="3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DiscountRate]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\get AP_Terms\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\get AP_Terms\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\get AP_Terms\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Output].Columns[DataRefreshedOn]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Output].Columns[DataRefreshedOn]"
+                      name="DataRefreshedOn"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\get AP_Terms\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\get AP_Terms\ODBC Source"
+              componentClassID="Attunity.SSISODBCSrc"
+              description="ODBC Source"
+              name="ODBC Source"
+              usesDispositions="true"
+              validateExternalMetadata="False"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">AP_TermsCode</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\get AP_Terms\ODBC Source.Connections[ODBCConnection]"
+                  connectionManagerID="{33584468-EA88-498B-B9C4-9AD581480D2F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Selecto32.KineticoDW]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[TermsCode]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[TermsCode]"
+                      length="2"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[TermsCode]"
+                      name="TermsCode" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[TermsCodeDesc]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[TermsCodeDesc]"
+                      length="30"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[TermsCodeDesc]"
+                      name="TermsCodeDesc" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DaysBeforeDue]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DaysBeforeDue]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DaysBeforeDue]"
+                      name="DaysBeforeDue"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DueDateADayOfTheMonth]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DueDateADayOfTheMonth]"
+                      length="1"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DueDateADayOfTheMonth]"
+                      name="DueDateADayOfTheMonth" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[MinimumDaysAllowedInv]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[MinimumDaysAllowedInv]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[MinimumDaysAllowedInv]"
+                      name="MinimumDaysAllowedInv"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DaysDiscountAllowed]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DaysDiscountAllowed]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DaysDiscountAllowed]"
+                      name="DaysDiscountAllowed"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DiscountDateADayOfTheMo]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DiscountDateADayOfTheMo]"
+                      length="1"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DiscountDateADayOfTheMo]"
+                      name="DiscountDateADayOfTheMo" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[MinimumDaysAllowedDisc]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[MinimumDaysAllowedDisc]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[MinimumDaysAllowedDisc]"
+                      name="MinimumDaysAllowedDisc"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DiscountRate]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DiscountRate]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].Columns[DiscountRate]"
+                      name="DiscountRate"
+                      precision="8"
+                      scale="3" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[TermsCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="TermsCode" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[TermsCodeDesc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="TermsCodeDesc" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DaysBeforeDue]"
+                      dataType="numeric"
+                      name="DaysBeforeDue"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DueDateADayOfTheMonth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="DueDateADayOfTheMonth" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[MinimumDaysAllowedInv]"
+                      dataType="numeric"
+                      name="MinimumDaysAllowedInv"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DaysDiscountAllowed]"
+                      dataType="numeric"
+                      name="DaysDiscountAllowed"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DiscountDateADayOfTheMo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="DiscountDateADayOfTheMo" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[MinimumDaysAllowedDisc]"
+                      dataType="numeric"
+                      name="MinimumDaysAllowedDisc"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DiscountRate]"
+                      dataType="numeric"
+                      name="DiscountRate"
+                      precision="8"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DateCreated]"
+                      dataType="dbDate"
+                      name="DateCreated" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[TimeCreated]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="TimeCreated" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[UserCreatedKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="UserCreatedKey" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DateUpdated]"
+                      dataType="dbDate"
+                      name="DateUpdated" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[TimeUpdated]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="TimeUpdated" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[UserUpdatedKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="UserUpdatedKey" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[TermsCode]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[TermsCode]"
+                      length="2"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[TermsCode]"
+                      name="TermsCode" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[TermsCodeDesc]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[TermsCodeDesc]"
+                      length="30"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[TermsCodeDesc]"
+                      name="TermsCodeDesc" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DaysBeforeDue]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DaysBeforeDue]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DaysBeforeDue]"
+                      name="DaysBeforeDue"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DueDateADayOfTheMonth]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DueDateADayOfTheMonth]"
+                      length="1"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DueDateADayOfTheMonth]"
+                      name="DueDateADayOfTheMonth" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[MinimumDaysAllowedInv]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[MinimumDaysAllowedInv]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[MinimumDaysAllowedInv]"
+                      name="MinimumDaysAllowedInv"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DaysDiscountAllowed]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DaysDiscountAllowed]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DaysDiscountAllowed]"
+                      name="DaysDiscountAllowed"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DiscountDateADayOfTheMo]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DiscountDateADayOfTheMo]"
+                      length="1"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DiscountDateADayOfTheMo]"
+                      name="DiscountDateADayOfTheMo" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[MinimumDaysAllowedDisc]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[MinimumDaysAllowedDisc]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[MinimumDaysAllowedDisc]"
+                      name="MinimumDaysAllowedDisc"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DiscountRate]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DiscountRate]"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[DiscountRate]"
+                      name="DiscountRate"
+                      precision="8"
+                      scale="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\get AP_Terms\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[ods_AP_Terms]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\get AP_Terms\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{657B2F64-5038-41B2-B873-7FF485FB1153}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SELECTO-TS_SQLEXPRESS.SQLSage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DataRefreshedOn]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DataRefreshedOn"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DataRefreshedOn]"
+                      lineageId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Output].Columns[DataRefreshedOn]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of TermsCode]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="Copy of TermsCode"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TermsCode]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of TermsCode]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of TermsCodeDesc]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Copy of TermsCodeDesc"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TermsCodeDesc]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of TermsCodeDesc]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DaysBeforeDue]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of DaysBeforeDue"
+                      cachedPrecision="3"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DaysBeforeDue]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DaysBeforeDue]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DueDateADayOfTheMonth]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Copy of DueDateADayOfTheMonth"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DueDateADayOfTheMonth]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DueDateADayOfTheMonth]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of MinimumDaysAllowedInv]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of MinimumDaysAllowedInv"
+                      cachedPrecision="3"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MinimumDaysAllowedInv]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of MinimumDaysAllowedInv]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DaysDiscountAllowed]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of DaysDiscountAllowed"
+                      cachedPrecision="3"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DaysDiscountAllowed]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DaysDiscountAllowed]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DiscountDateADayOfTheMo]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Copy of DiscountDateADayOfTheMo"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DiscountDateADayOfTheMo]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DiscountDateADayOfTheMo]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of MinimumDaysAllowedDisc]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of MinimumDaysAllowedDisc"
+                      cachedPrecision="3"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MinimumDaysAllowedDisc]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of MinimumDaysAllowedDisc]" />
+                    <inputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DiscountRate]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of DiscountRate"
+                      cachedPrecision="8"
+                      cachedScale="3"
+                      externalMetadataColumnId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DiscountRate]"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DiscountRate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TermsCode]"
+                      dataType="wstr"
+                      length="2"
+                      name="TermsCode" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TermsCodeDesc]"
+                      dataType="wstr"
+                      length="30"
+                      name="TermsCodeDesc" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DaysBeforeDue]"
+                      dataType="numeric"
+                      name="DaysBeforeDue"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DueDateADayOfTheMonth]"
+                      dataType="wstr"
+                      length="1"
+                      name="DueDateADayOfTheMonth" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MinimumDaysAllowedInv]"
+                      dataType="numeric"
+                      name="MinimumDaysAllowedInv"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DaysDiscountAllowed]"
+                      dataType="numeric"
+                      name="DaysDiscountAllowed"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DiscountDateADayOfTheMo]"
+                      dataType="wstr"
+                      length="1"
+                      name="DiscountDateADayOfTheMo" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MinimumDaysAllowedDisc]"
+                      dataType="numeric"
+                      name="MinimumDaysAllowedDisc"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DiscountRate]"
+                      dataType="numeric"
+                      name="DiscountRate"
+                      precision="8"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DataRefreshedOn]"
+                      dataType="dbTimeStamp"
+                      name="DataRefreshedOn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\get AP_Terms\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\get AP_Terms\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\get AP_Terms\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\get AP_Terms\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of TermsCode]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="Copy of TermsCode"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TermsCode]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of TermsCode]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of TermsCodeDesc]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Copy of TermsCodeDesc"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TermsCodeDesc]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of TermsCodeDesc]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of DaysBeforeDue]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of DaysBeforeDue"
+                      cachedPrecision="3"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DaysBeforeDue]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DaysBeforeDue]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of DueDateADayOfTheMonth]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Copy of DueDateADayOfTheMonth"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DueDateADayOfTheMonth]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DueDateADayOfTheMonth]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of MinimumDaysAllowedInv]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of MinimumDaysAllowedInv"
+                      cachedPrecision="3"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MinimumDaysAllowedInv]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of MinimumDaysAllowedInv]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of DaysDiscountAllowed]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of DaysDiscountAllowed"
+                      cachedPrecision="3"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DaysDiscountAllowed]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DaysDiscountAllowed]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of DiscountDateADayOfTheMo]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Copy of DiscountDateADayOfTheMo"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DiscountDateADayOfTheMo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DiscountDateADayOfTheMo]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of MinimumDaysAllowedDisc]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of MinimumDaysAllowedDisc"
+                      cachedPrecision="3"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MinimumDaysAllowedDisc]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of MinimumDaysAllowedDisc]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\get AP_Terms\Union All.Inputs[Union All Input 1].Columns[Copy of DiscountRate]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of DiscountRate"
+                      cachedPrecision="8"
+                      cachedScale="3"
+                      lineageId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DiscountRate]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DiscountRate]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\get AP_Terms\Union All.Inputs[Union All Input 2]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of TermsCode]"
+                      dataType="wstr"
+                      length="2"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of TermsCode]"
+                      name="Copy of TermsCode" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of TermsCodeDesc]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of TermsCodeDesc]"
+                      name="Copy of TermsCodeDesc" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DaysBeforeDue]"
+                      dataType="numeric"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DaysBeforeDue]"
+                      name="Copy of DaysBeforeDue"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DueDateADayOfTheMonth]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DueDateADayOfTheMonth]"
+                      name="Copy of DueDateADayOfTheMonth" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of MinimumDaysAllowedInv]"
+                      dataType="numeric"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of MinimumDaysAllowedInv]"
+                      name="Copy of MinimumDaysAllowedInv"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DaysDiscountAllowed]"
+                      dataType="numeric"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DaysDiscountAllowed]"
+                      name="Copy of DaysDiscountAllowed"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DiscountDateADayOfTheMo]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DiscountDateADayOfTheMo]"
+                      name="Copy of DiscountDateADayOfTheMo" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of MinimumDaysAllowedDisc]"
+                      dataType="numeric"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of MinimumDaysAllowedDisc]"
+                      name="Copy of MinimumDaysAllowedDisc"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DiscountRate]"
+                      dataType="numeric"
+                      lineageId="Package\get AP_Terms\Union All.Outputs[Union All Output 1].Columns[Copy of DiscountRate]"
+                      name="Copy of DiscountRate"
+                      precision="8"
+                      scale="3" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\get AP_Terms.Paths[Data Conversion Output]"
+              endId="Package\get AP_Terms\Union All.Inputs[Union All Input 1]"
+              name="Data Conversion Output"
+              startId="Package\get AP_Terms\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\get AP_Terms.Paths[Derived Column Output]"
+              endId="Package\get AP_Terms\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\get AP_Terms\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\get AP_Terms.Paths[ODBC Source Output]"
+              endId="Package\get AP_Terms\Data Conversion.Inputs[Data Conversion Input]"
+              name="ODBC Source Output"
+              startId="Package\get AP_Terms\ODBC Source.Outputs[ODBC Source Output]" />
+            <path
+              refId="Package\get AP_Terms.Paths[Union All Output 1]"
+              endId="Package\get AP_Terms\Derived Column.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\get AP_Terms\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\get bank codes"
       DTS:CreationName="Microsoft.Pipeline"
@@ -6735,6 +7912,22 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\trunc AP_Terms"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{34B78FC0-5EB2-407F-A225-05E9608ADDAA}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="trunc AP_Terms"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{657B2F64-5038-41B2-B873-7FF485FB1153}"
+          SQLTask:SqlStatementSource="truncate table dbo.ods_AP_Terms" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\truncate AP_Vendor"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -6742,7 +7935,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate AP_Vendor"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -6758,7 +7951,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate GL_Bank"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -6784,6 +7977,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\get bank codes" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{E326D842-881A-4C1A-A8AE-52ED8611C15A}"
+      DTS:From="Package\trunc AP_Terms"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\get AP_Terms" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -6796,15 +7997,23 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\get bank codes"
+          TopLeft="674,155" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\get vendors"
+          TopLeft="445,146" />
         <NodeLayout
           Size="178,42"
           Id="Package\truncate AP_Vendor"
           TopLeft="434,67" />
         <NodeLayout
-          Size="136,42"
-          Id="Package\get vendors"
-          TopLeft="445,146" />
+          Size="167,42"
+          Id="Package\truncate GL_Bank"
+          TopLeft="659,69" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="523,109">
@@ -6839,14 +8048,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="167,42"
-          Id="Package\truncate GL_Bank"
-          TopLeft="659,69" />
-        <NodeLayout
-          Size="153,42"
-          Id="Package\get bank codes"
-          TopLeft="674,155" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="742.5,111">
@@ -6881,187 +8082,51 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="158,42"
+          Id="Package\trunc AP_Terms"
+          TopLeft="887,81" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\get AP_Terms"
+          TopLeft="909,165" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="966,123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="17.5,42"
+              Start="0,0"
+              End="17.5,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="4,21" />
+                  <mssgle:LineSegment
+                    End="13.5,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.5,21"
+                    Point2="17.5,21"
+                    Point3="17.5,25" />
+                  <mssgle:LineSegment
+                    End="17.5,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <TaskHost
-    design-time-name="Package\get vendors">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="149,42"
-          Id="Package\get vendors\ODBC Source"
-          TopLeft="581,65" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\get vendors\Data Conversion"
-          TopLeft="605,191" />
-        <EdgeLayout
-          Id="Package\get vendors.Paths[ODBC Source Output]"
-          TopLeft="655.5,107">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="30,84"
-              Start="0,0"
-              End="30,76.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,38"
-                    Point2="0,42"
-                    Point3="4,42" />
-                  <mssgle:LineSegment
-                    End="26,42" />
-                  <mssgle:CubicBezierSegment
-                    Point1="26,42"
-                    Point2="30,42"
-                    Point3="30,46" />
-                  <mssgle:LineSegment
-                    End="30,76.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\get vendors\Derived Column"
-          TopLeft="621,290" />
-        <EdgeLayout
-          Id="Package\get vendors.Paths[Data Conversion Output]"
-          TopLeft="685.5,233">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="14.5,57"
-              Start="0,0"
-              End="14.5,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.5"
-                    Point2="0,28.5"
-                    Point3="4,28.5" />
-                  <mssgle:LineSegment
-                    End="10.5,28.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="10.5,28.5"
-                    Point2="14.5,28.5"
-                    Point3="14.5,32.5" />
-                  <mssgle:LineSegment
-                    End="14.5,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\get vendors\OLE DB Destination"
-          TopLeft="635,441" />
-        <NodeLayout
-          Size="123,42"
-          Id="Package\get vendors\Union All"
-          TopLeft="646,364" />
-        <EdgeLayout
-          Id="Package\get vendors.Paths[Derived Column Output]"
-          TopLeft="703.75,332">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32"
-              Start="0,0"
-              End="0,24.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\get vendors.Paths[Union All Output 1]"
-          TopLeft="707.5,406">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="16,35"
-              Start="0,0"
-              End="16,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.5"
-                    Point2="0,17.5"
-                    Point3="4,17.5" />
-                  <mssgle:LineSegment
-                    End="12,17.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12,17.5"
-                    Point2="16,17.5"
-                    Point3="16,21.5" />
-                  <mssgle:LineSegment
-                    End="16,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\get vendors\ODBC Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\get vendors\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\get bank codes">
     <LayoutInfo>
@@ -7227,7 +8292,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\get bank codes\get GL_Bank">
+    design-time-name="Package\get bank codes\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7240,7 +8305,339 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\get bank codes\OLE DB Destination">
+    design-time-name="Package\get bank codes\get GL_Bank">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\get vendors">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149,42"
+          Id="Package\get vendors\ODBC Source"
+          TopLeft="581,65" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\get vendors\Data Conversion"
+          TopLeft="605,191" />
+        <EdgeLayout
+          Id="Package\get vendors.Paths[ODBC Source Output]"
+          TopLeft="655.5,107">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30,84"
+              Start="0,0"
+              End="30,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38"
+                    Point2="0,42"
+                    Point3="4,42" />
+                  <mssgle:LineSegment
+                    End="26,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26,42"
+                    Point2="30,42"
+                    Point3="30,46" />
+                  <mssgle:LineSegment
+                    End="30,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158,42"
+          Id="Package\get vendors\Derived Column"
+          TopLeft="621,290" />
+        <EdgeLayout
+          Id="Package\get vendors.Paths[Data Conversion Output]"
+          TopLeft="685.5,233">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="14.5,57"
+              Start="0,0"
+              End="14.5,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.5"
+                    Point2="0,28.5"
+                    Point3="4,28.5" />
+                  <mssgle:LineSegment
+                    End="10.5,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10.5,28.5"
+                    Point2="14.5,28.5"
+                    Point3="14.5,32.5" />
+                  <mssgle:LineSegment
+                    End="14.5,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\get vendors\OLE DB Destination"
+          TopLeft="635,441" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\get vendors\Union All"
+          TopLeft="646,364" />
+        <EdgeLayout
+          Id="Package\get vendors.Paths[Derived Column Output]"
+          TopLeft="703.75,332">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32"
+              Start="0,0"
+              End="0,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\get vendors.Paths[Union All Output 1]"
+          TopLeft="707.5,406">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16,35"
+              Start="0,0"
+              End="16,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.5"
+                    Point2="0,17.5"
+                    Point3="4,17.5" />
+                  <mssgle:LineSegment
+                    End="12,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12,17.5"
+                    Point2="16,17.5"
+                    Point3="16,21.5" />
+                  <mssgle:LineSegment
+                    End="16,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\get vendors\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\get vendors\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\get AP_Terms">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149,42"
+          Id="Package\get AP_Terms\ODBC Source"
+          TopLeft="640,41" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\get AP_Terms\Data Conversion"
+          TopLeft="636,182" />
+        <EdgeLayout
+          Id="Package\get AP_Terms.Paths[ODBC Source Output]"
+          TopLeft="715.5,83">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,99"
+              Start="0,0"
+              End="0,91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="123,42"
+          Id="Package\get AP_Terms\Union All"
+          TopLeft="653,301" />
+        <EdgeLayout
+          Id="Package\get AP_Terms.Paths[Data Conversion Output]"
+          TopLeft="715.5,224">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77"
+              Start="0,0"
+              End="0,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158,42"
+          Id="Package\get AP_Terms\Derived Column"
+          TopLeft="665,417" />
+        <EdgeLayout
+          Id="Package\get AP_Terms.Paths[Union All Output 1]"
+          TopLeft="714.5,343">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.5,74"
+              Start="0,0"
+              End="29.5,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="4,37" />
+                  <mssgle:LineSegment
+                    End="25.5,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.5,37"
+                    Point2="29.5,37"
+                    Point3="29.5,41" />
+                  <mssgle:LineSegment
+                    End="29.5,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\get AP_Terms\OLE DB Destination"
+          TopLeft="660,517" />
+        <EdgeLayout
+          Id="Package\get AP_Terms.Paths[Derived Column Output]"
+          TopLeft="746.25,459">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\get AP_Terms\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\get AP_Terms\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
