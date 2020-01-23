@@ -8,7 +8,7 @@
       DTS:ConnectionString="uid=KineticoDW;Dsn=Selecto32;">
       <DTS:Password
         DTS:Name="pwd"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVCtN/2c0iUaAf2tNF3Cx9QAAAAACAAAAAAADZgAAwAAAABAAAABWHt1VvQVJjUXBUDQGo+ukAAAAAASAAACgAAAAEAAAANh9SxzzxUbHr1bGVnJgzpl4AAAAa6bHlZ21qtBNQeAIuFG8L965OU2EKG/M5o9LiyqIf8gEGHMSo4jkkjA81IpxjSp1wHz0Xh0yT2YcXidjPJRmxmar3ey536osn+xM146Tnt8Cf8pyucrbPL2ohXdNMjxsBvzg7qwvC0vwKqoAw/3OltGwM2deWNw1FAAAAEsQEUlup1+Wyjn8ZZjS7r3rPcPY</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApKbnEfPhPkirzTeQBQnBDgAAAAACAAAAAAADZgAAwAAAABAAAABjoyL9uFkNzFN4KKm6hzFeAAAAAASAAACgAAAAEAAAACtvE0h5d5JG9GIkMcc6Euh4AAAAXmUo3z+h2hhT4Xhx0gwOqo7rCcqu/CB89hVtCkS5RzjN8ZLmYUD8WJsNbDtAUL+s52c7alSZ+fhfPkyxBquvP8XKy63CtScJkc5vy9Z5yRrc/mXVMfQ/DtrfaQj7OmnW2sh5UWgE/J6/lfuwPiV8hZbU6knd8kLyFAAAAHbWXk3R2GOe80I2wgeSziM4qkc6</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
