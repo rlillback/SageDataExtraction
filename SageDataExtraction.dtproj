@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">SELECTO-TS</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVCtN/2c0iUaAf2tNF3Cx9QAAAAACAAAAAAADZgAAwAAAABAAAADptx27Hko3OJ2J1QUneeKeAAAAAASAAACgAAAAEAAAAPQpUsll0THVkQcTLJ2NOtqIAAAA0emHesxp0S33uEfhyW64Qnm2yGUYwhDN90FmeYGo2c1y7TEHnDB4eVubsOk4baauZ3U5SeDS7sK7Ggik5vlfpa2slDslV0WCO0ELz8PIm91WehvtRPHw1eoBvGFmn6xVehAzM4otImixe7Wx0yG9EosYJWPeHPbZC0gaAjmOFwzED0xgm5SoChQAAAAbFJ8knqSxmA2kBMcxjWK/fo53Cw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApKbnEfPhPkirzTeQBQnBDgAAAAACAAAAAAADZgAAwAAAABAAAACjL+SxA/ljq+VksbOcdoVxAAAAAASAAACgAAAAEAAAAF50qvT+lCbUcwTMcn9edJaIAAAAQGznJdWxahP8syIOTojyFQFskB56cznV0Ero2KmoG+gT5dRXbQKlKKe2FM8OtLEq9DWQru/U3BW+A73MHfw0mN6O4dT50YHb4EgDwVb2+t6s2xQNiq8OtL4xA7MMKY5/u1Ys99vpRScgawXV34u6mpHMEDTeCD3w8WbOBP6GNRaHJPlbLs1f+xQAAAC8EQLEnu3J0Sy8BEQnEqZvQ4hc7A==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -34,6 +34,7 @@
           <SSIS:Package SSIS:Name="VendorData.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="UserData.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="CustomerData.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="SuplementalItemData.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="Selecto32.KineticoDW.conmgr" />
@@ -254,10 +255,10 @@
                 <SSIS:Property SSIS:Name="Name">ItemData</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">31</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">32</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BB5342CD-A018-4C1B-8163-7AB69D94B668}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{89FCCE97-BF80-453D-99C1-B53CA3A82923}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -309,6 +310,23 @@
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionGUID">{8763476D-3ABC-4FFC-9A27-9CAF85B7AC91}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="SuplementalItemData.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{102453A6-EAF9-4345-AD74-85F1B6CF82E9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E9BF43DD-34E8-47F5-B7E6-7B9338E8FA5E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
